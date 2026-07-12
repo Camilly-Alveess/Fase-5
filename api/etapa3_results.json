@@ -1,0 +1,37 @@
+{
+  "context_variable": "prev_success (poutcome == success)",
+  "arms": [
+    "cellular",
+    "telephone"
+  ],
+  "best_arm_global_train": "cellular",
+  "legacy_baseline_value": 0.0687347767681492,
+  "strong_baseline_value": 0.13865136193850874,
+  "thompson_sampling_value": 0.13865136193850874,
+  "gain_pp_vs_legacy": 6.991658517035955,
+  "gain_relative_pct_vs_legacy": 101.71937475871458,
+  "gain_pp_vs_strong_baseline": 0.0,
+  "gain_relative_pct_vs_strong_baseline": 0.0,
+  "ts_learned_policy": {
+    "contexto_0": "cellular",
+    "contexto_1": "cellular"
+  },
+  "ts_posterior_params": {
+    "0_cellular": [
+      2399.0,
+      17409.0
+    ],
+    "0_telephone": [
+      2.0,
+      76.0
+    ],
+    "1_cellular": [
+      612.0,
+      315.0
+    ],
+    "1_telephone": [
+      3.0,
+      5.0
+    ]
+  }
+}

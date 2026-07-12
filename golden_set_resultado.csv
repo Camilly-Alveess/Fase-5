@@ -1,0 +1,6 @@
+id,perfil,age,job,marital,education,balance,housing,loan,campaign,previous,poutcome,contato_real_no_histórico,converteu_no_histórico,prev_success,contexto_modelo,oferta_recomendada,conversão_esperada_no_braço
+1,Cliente que converteu na campanha anterior,32,admin.,married,secondary,1229,no,no,1,1,success,cellular,no,1,converteu antes,cellular,0.6602
+2,"Cliente jovem, estudante, primeiro contato",19,student,single,secondary,1803,no,no,1,0,unknown,cellular,no,0,não converteu antes,cellular,0.1211
+3,"Cliente aposentado, contato anterior sem sucesso",66,retired,married,secondary,154,no,no,5,2,failure,cellular,yes,0,não converteu antes,cellular,0.1211
+4,Cliente com financiamento e empréstimo pessoal ativos (saldo negativo),47,services,married,secondary,-98,yes,yes,1,0,unknown,telephone,no,0,não converteu antes,cellular,0.1211
+5,"Cliente jovem, converteu na campanha anterior",25,blue-collar,single,secondary,303,no,no,1,1,success,cellular,yes,1,converteu antes,cellular,0.6602
