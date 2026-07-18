@@ -18,6 +18,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
 from model import load_model, build_context
+from pydantic import BaseModel, Field, ConfigDict
 
 app = FastAPI(
     title="Datathon 7MLET — Recomendador de Canal (Bandit Adaptativo)",
@@ -51,8 +52,8 @@ class ClienteRequest(BaseModel):
     previous: int = Field(0, ge=0, description="Nº de contatos antes desta campanha")
     poutcome: PoutcomeEnum = Field(..., description="Resultado da campanha anterior")
 
-    class Config:
-        json_schema_extra = {
+    model_config = ConfigDict(
+        json_schema_extra={
             "example": {
                 "age": 32,
                 "job": "admin.",
@@ -66,8 +67,8 @@ class ClienteRequest(BaseModel):
                 "poutcome": "success",
             }
         }
-
-
+    )
+    
 class RecomendacaoResponse(BaseModel):
     oferta_recomendada: str
     conversao_esperada: float
